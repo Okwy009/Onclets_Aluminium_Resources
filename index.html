@@ -69,6 +69,17 @@ nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
 .profile svg{display:block;width:100%;height:100%}
 @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:32px;padding-block:40px 90px}}
 
+
+/* hero photo (full-bleed, like Appre) */
+.hero{isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;max-width:none}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,37,86,.94) 0%,rgba(11,37,86,.82) 45%,rgba(11,37,86,.45) 100%)}
+@media (max-width:860px){.hero-bg::after{background:linear-gradient(180deg,rgba(11,37,86,.78) 0%,rgba(11,37,86,.92) 60%)}}
+.hero .wrap{padding-block:88px 130px}
+@media (max-width:860px){.hero .wrap{padding-block:56px 100px}}
+.callcard{background:rgba(11,37,86,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+
 /* products */
 section{padding-block:72px}
 .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
@@ -150,6 +161,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </header>
 
 <div class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"><img src="images/hero.jpg" alt="" fetchpriority="high"></div>
   <div class="wrap">
     <div>
       <div class="eyebrow" style="color:var(--sun)">Ibeju-Lekki · Lagos</div>

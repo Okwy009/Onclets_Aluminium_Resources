@@ -130,6 +130,18 @@ section{padding-block:72px}
 .lb .nav{display:flex;justify-content:center;gap:10px}
 .lb button{font:700 15px var(--body);background:rgba(255,255,255,.14);color:#fff;border:0;border-radius:10px;padding:10px 16px;cursor:pointer}
 
+
+/* email + tiktok in call card */
+.callcard .alt{margin-top:14px;display:grid;gap:10px}
+.callcard .alt li{background:rgba(0,0,0,.18)}
+.callcard .alt .lbl{display:block;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;color:var(--band-muted)}
+.callcard .alt .val{font-weight:700;font-size:17px;user-select:all;word-break:break-all}
+.callcard .alt .num{font-size:inherit}
+.mini a.tt{background:#111;color:#fff}
+.cta .socials{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px 20px;font-weight:600;color:#C9D8F2}
+.cta .socials a{color:#fff;text-underline-offset:4px}
+.btn-tt{background:#111;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.25)}
+
 /* contact band */
 .cta{background:var(--navy);color:#fff}
 .cta .wrap{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
@@ -174,11 +186,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div class="rc">RC: 880876</div>
     </div>
     <div class="callcard" id="contact">
-      <h2>Call or WhatsApp</h2>
+      <h2>Contact us</h2>
       <ul>
         <li><span class="num">0803 350 3255</span><span class="mini"><a class="wa" href="https://wa.me/2348033503255" target="_blank" rel="noopener">WhatsApp</a><button type="button" data-copy="08033503255">Copy</button></span></li>
         <li><span class="num">0803 495 4411</span><span class="mini"><a class="wa" href="https://wa.me/2348034954411" target="_blank" rel="noopener">WhatsApp</a><button type="button" data-copy="08034954411">Copy</button></span></li>
         <li><span class="num">0812 745 6276</span><span class="mini"><a class="wa" href="https://wa.me/2348127456276" target="_blank" rel="noopener">WhatsApp</a><button type="button" data-copy="08127456276">Copy</button></span></li>
+      </ul>
+      <ul class="alt">
+        <li><span><span class="lbl">Email</span><span class="val num">oncletsalum@gmail.com</span></span><span class="mini"><a href="mailto:oncletsalum@gmail.com">Email us</a><button type="button" data-copy="oncletsalum@gmail.com">Copy</button></span></li>
+        <li><span><span class="lbl">TikTok</span><span class="val num">@onclets_aluminum</span></span><span class="mini"><a class="tt" href="https://www.tiktok.com/@onclets_aluminum" target="_blank" rel="noopener">Follow</a></span></li>
       </ul>
       <div class="who"><b>Cletus Onuoha</b>, MD / CEO</div>
     </div>
@@ -235,10 +251,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div>
       <h2>Building or renovating? <span>Get a price today.</span></h2>
       <p>Send your roof size, window measurements or a photo of the job on WhatsApp and we'll reply with what you need and the cost.</p>
+      <div class="socials"><span>Email: <a href="mailto:oncletsalum@gmail.com">oncletsalum@gmail.com</a></span><span>TikTok: <a href="https://www.tiktok.com/@onclets_aluminum" target="_blank" rel="noopener">@onclets_aluminum</a></span></div>
     </div>
     <div class="ctas">
       <a class="btn btn-wa" href="https://wa.me/2348033503255" target="_blank" rel="noopener">WhatsApp 0803 350 3255</a>
-      <a class="btn btn-sun" href="#contact">All phone numbers</a>
+      <a class="btn btn-tt" href="https://www.tiktok.com/@onclets_aluminum" target="_blank" rel="noopener">See our work on TikTok</a>
+      <a class="btn btn-sun" href="#contact">All contacts</a>
     </div>
   </div>
 </section>
@@ -246,7 +264,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <footer>
   <div class="wrap">
     <span>© Onclet's Aluminum Resources Ltd · RC: 880876</span>
-    <span>Eleko Junction, Ibeju-Lekki, Lagos</span>
+    <span>Eleko Junction, Ibeju-Lekki, Lagos · <a href="mailto:oncletsalum@gmail.com">oncletsalum@gmail.com</a> · <a href="https://www.tiktok.com/@onclets_aluminum" target="_blank" rel="noopener">TikTok</a></span>
   </div>
 </footer>
 
